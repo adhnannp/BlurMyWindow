@@ -52,8 +52,8 @@ We welcome contributions to improve this extension! Here's how you can contribut
 ### **1. Clone the Repository**
 To get started, clone the repository to your local machine:
 ```bash
-git clone https://github.com/your-username/Blur-My-Window.git
-cd Blur-My-Window
+git clone https://github.com/adhnannp/BlurMyWindow
+cd BlurMyWindow
 ```
 
 ### **2. Add New Functionalities**
