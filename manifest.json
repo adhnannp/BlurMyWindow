@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Blur My Window",
+  "version": "1.0",
+  "description": "A simple extension to blur the webpage content.",
+  "permissions": ["activeTab", "storage", "commands", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+  "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "commands": {
+    "toggle-blur": {
+      "suggested_key": {
+        "default": "Shift+Ctrl+Space"
+      },
+      "description": "Toggle blur effect"
+    }
+  }
+}
