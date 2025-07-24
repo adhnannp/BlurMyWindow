@@ -3,9 +3,17 @@
 <head>
   <title>Blur My Window</title>
   <link rel="stylesheet" href="popup.css">
-  <script src="popup.js" defer></script>
 </head>
 <body>
   <button id="toggleBlur">Toggle Blur</button>
+  <button id="toggleNavigate">Toggle Navigate</button> 
+
+  <!-- Custom Message Box -->
+  <div id="messageBox" class="hidden">
+    <p id="messageText"></p>
+    <button id="closeMessage">OK</button>
+  </div>
+
+  <script src="popup.js" defer></script>
 </body>
 </html>
