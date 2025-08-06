@@ -4,6 +4,7 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 10px;
+  width: 200px; 
 }
 
 button {
@@ -13,6 +14,8 @@ button {
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
+  margin: 5px; 
+  width: 90%; 
 }
 
 button:hover {
@@ -25,4 +28,42 @@ input {
   border: 1px solid #555;
   padding: 5px;
   margin-top: 10px;
+}
+
+#messageBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #222;
+  border: 1px solid #555;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 100000; 
+  color: white;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+
+#messageBox.hidden {
+  display: none;
+}
+
+#messageText {
+  margin-bottom: 15px;
+}
+
+#closeMessage {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#closeMessage:hover {
+  background-color: #0056b3;
 }
