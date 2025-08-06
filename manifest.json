@@ -2,11 +2,11 @@
   "manifest_version": 3,
   "name": "Blur My Window",
   "version": "1.0",
-  "description": "A simple extension to blur the webpage content.",
-  "permissions": ["activeTab", "storage", "commands", "scripting"],
+  "description": "A simple extension to blur the webpage content and demonstrate a custom navigation effect.",
+  "permissions": ["activeTab", "storage", "commands", "scripting", "tabs"],
   "host_permissions": ["<all_urls>"],
   "background": {
-  "service_worker": "background.js"
+    "service_worker": "background.js"
   },
   "action": {
     "default_popup": "popup.html",
@@ -22,6 +22,12 @@
         "default": "Shift+Ctrl+Space"
       },
       "description": "Toggle blur effect"
+    },
+    "toggle-navigate": {
+      "suggested_key": {
+        "default": "Shift+Ctrl+Q"
+      },
+      "description": "Trigger custom navigation with loading screen"
     }
   }
 }
